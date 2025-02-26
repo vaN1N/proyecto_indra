@@ -1,3 +1,5 @@
+-- proyecto indra
+-- creado por Iván Naranjo
 drop database if exists portaleventos;
 create database portaleventos;
 use portaleventos;
