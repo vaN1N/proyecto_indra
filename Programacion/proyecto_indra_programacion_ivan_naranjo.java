@@ -1,3 +1,5 @@
+// Proyecto indra
+// Creado por Ivan Naranjo
 import java.util.Scanner;
 
 public class GestionEventos {
