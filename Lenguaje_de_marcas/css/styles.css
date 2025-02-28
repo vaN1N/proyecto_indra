@@ -1,0 +1,162 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header, footer {
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+nav ul li {
+    position: relative;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    background-color: #444;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+nav ul li .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #444;
+    min-width: 160px;
+    z-index: 1;
+    border-radius: 5px;
+}
+
+nav ul li .dropdown-content a {
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+nav ul li .dropdown-content a:hover {
+    background-color: #555;
+}
+
+nav ul li:hover .dropdown-content {
+    display: block;
+}
+
+main {
+    flex: 1;
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto;
+    width: 50%;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;  /* Bordes redondeados */
+    background-color: #c9c9c9a1;
+}
+
+label, input, textarea {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+input[type="submit"] {
+    width: auto;
+    background-color: #444;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #555;
+}
+
+.carrusel-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.carrusel-slide {
+    display: none;
+}
+
+.carrusel-slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.carrusel-container .active {
+    display: block;
+}
+
+.carrusel-item {
+    display: inline-block;
+    width: 30%;
+    margin: 0 10px;
+    background-color: #eee;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;  /* Bordes redondeados */
+}
+
+table {
+    width: 100%;
+    height: 500px;
+    border-collapse: collapse;
+    border-radius: 10px; /* Bordes redondeados */
+    overflow: hidden; /* Para que los bordes redondeados se apliquen correctamente */
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center; /* Centrando texto */
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}

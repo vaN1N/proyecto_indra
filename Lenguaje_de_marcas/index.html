@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Portal de Eventos Sostenibles</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Portal de Eventos Sostenibles</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="pages/listado.html">Listado de Eventos</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Detalle del Evento</a>
+                    <div class="dropdown-content">
+                        <a href="pages/detalles1.html">Evento Sostenible</a>
+                        <a href="pages/detalles2.html">Taller de Reciclaje Creativo</a>
+                        <a href="pages/detalles3.html">Taller de Reciclaje Creativo</a>
+                    </div>
+                </li>
+                <li><a href="pages/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <br><br><br>
+        <nav>
+            En este portal, encontrarán todo lo que necesitan saber sobre eventos relacionados con la sostenibilidad, <br>
+            desde conferencias y talleres hasta actividades ecológicas. Nuestra misión es conectar a personas apasionadas por el medio ambiente y fomentar la participación en iniciativas sostenibles.
+        </nav>
+    </header>
+    <main>
+        <section id="carrusel">
+            <h2>Eventos Destacados</h2>
+            <div class="carrusel-container">
+                <div class="carrusel-slide active">
+                    <img src="img/evento1.png" alt="Evento 1">
+                </div>
+                <div class="carrusel-slide">
+                    <img src="img/evento2.png" alt="Evento 2">
+                </div>
+                <div class="carrusel-slide">
+                    <img src="img/evento3.png" alt="Evento 3">
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2025 Portal de Eventos Sostenibles | Creado por Ivan Naranjo</p>
+    </footer>
+    <script>
+        let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    let slides = document.querySelectorAll('.carrusel-slide');
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].classList.remove('active');
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {
+        slideIndex = 1;
+    }
+    slides[slideIndex - 1].classList.add('active');
+    setTimeout(showSlides, 3000); // Cambia de imagen cada 3 segundos
+}
+
+    </script>
+</body>
+</html>

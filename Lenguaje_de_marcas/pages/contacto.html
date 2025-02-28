@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Contacto</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="listado.html">Listado de Eventos</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Detalle del Evento</a>
+                    <div class="dropdown-content">
+                        <a href="detalles1.html">Evento Sostenible</a>
+                        <a href="detalles2.html">Taller de Reciclaje Creativo</a>
+                        <a href="detalles3.html">Taller de Reciclaje Creativo</a>
+                    </div>
+                </li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="contacto">
+            <h2>Formulario de Contacto</h2>
+            <form method="get">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required><br><br>
+
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="tipo">Tipo de Consulta:</label>
+                <select id="tipo" name="tipo" required>
+                    <option value="">Seleccione una opción</option>
+                    <option value="problema">Problema</option>
+                    <option value="duda">Duda</option>
+                    <option value="creacion-evento">Creación de Evento</option>
+                </select><br>
+
+                <label for="descripcion">Descripción:</label>
+                <textarea id="descripcion" name="descripcion" rows="4" required></textarea><br><br>
+
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>© 2025 Portal de Eventos Sostenibles</p>
+    </footer>
+</body>
+</html>
